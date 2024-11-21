@@ -1,4 +1,4 @@
 # Portfolio Webpage
 
-This repository contains the code for my personal portfolio webpage which an be found [here](https://dxbvo.github.io/).
+This repository contains the code for my [portfolio webpage](https://dxbvo.github.io/) using HTML, CSS and Bootstrap 5.
 
