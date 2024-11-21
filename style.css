@@ -11,6 +11,7 @@
 }
 .hero_desc {
     font-size: 2rem;
+    animation: fadeIn 3s ease-in forwards;
 }
 .hero-text {
     text-align: center;
@@ -21,9 +22,23 @@
     color: white;
 }
 
+.about_seondary {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.about_title {
+  font-size: 4rem;
+}
+
+.about_text {
+  color: red;
+  font-size: x-large;
+}
+
 /* about section image css */
 .imageAboutPage {
-    width: 80%;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -84,7 +99,6 @@
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
-    transition: background 0.3s ease;
   }
   
   .project-card a:hover {
@@ -96,8 +110,9 @@
     font-size: 30px;
     cursor: pointer;
     word-spacing: 30px;
+    animation: fadeIn 3s ease-in forwards;
 }
-.fa-linkedin:hover,.fa-github:hover,.fa-solid-envelope:hover {
+.fa-linkedin:hover,.fa-github:hover,.fa-envelope:hover {
     color: gray;
 }
 .fab {
@@ -111,6 +126,68 @@ footer {
     padding: 20px;
     margin-top: 40px;
   }
+
+.navbar {
+  background-color: black;
+  
+}
+
+/* Ensure the body and html fill the viewport height */
+html, body {
+  height: 100%; /* Make the entire page fill the viewport */
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the about section fill the remaining space */
+#about {
+  min-height: 91%; /* Ensure it fills at least the viewport height */
+  display: flex; /* Flexbox for vertical centering */
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding-top: 20px; /* Prevent overlap with the fixed navbar */
+  padding-bottom: 20px; /* Optional padding for spacing */
+}
+
+/* About section text alignment */
+#about h1 {
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.imageAboutPage {
+  width: 100%; /* Ensure responsiveness */
+  max-width: 300px; /* Restrict maximum width */
+  border-radius: 10px; /* Optional rounded corners */
+  margin-bottom: 20px; /* Spacing below the image */
+}
+
+footer {
+  background-color: #222; /* Dark footer background */
+  color: white; /* Footer text color */
+  margin-top: auto; /* Push footer to the bottom */
+  padding: 10px 0; /* Add padding */
+  text-align: center;
+}
+
+/* Transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-text {
+  animation: fadeIn 2s ease-in-out;
+  opacity: 1; /* Ensure the final state is visible */
+}
+
+
+
+
 
 
 

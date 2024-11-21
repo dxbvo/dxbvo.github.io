@@ -18,9 +18,9 @@
     <script src="script.js"></script>
     
     <!-- Header with navigation bar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Diego Belusky</a>
+            <a class="navbar-brand" href="index.html#home">Diego Belusky</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,13 +30,14 @@
                         <a class="nav-link" href="index.html#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about" style="font-style: ;">About</a>
 
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="media/CV Diego Belusky DE.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                        <button type="button" class="btn btn-outline-dark" style="color: gray; border-radius: 20px; border-color: gray;">Resume</button>
+
                     </li>
                 </ul>
 
@@ -46,47 +47,28 @@
 
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
                     <img src="media/portrait.jpg" class= "imageAboutPage" alt="">
                 </div>
 
-                <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-
+                <div class="col">
+                    <div class="row">
+                        <small class="about_seondary">Welcome</small>
+                        <h1 class="about_title">I'm Diego</h1>
+                    </div>
+                <div id="test">
+                    <p>
+                        I'm a recent electrical engineer graduate from Zürcher Hochschule der Angewandten Wissenschaften (ZHAW).
                     </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                </div>
+                </div>                
             </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center py-3">
-        <p>© 2024 Diego Belusky. All Rights Reserved.</p>
+        <p>© 2024 Diego Belusky. All rights reserved.</p>
     </footer>
 
 </body>
