@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #2a9d8f;
+  --secondary-color: #264653;
+  --background-color: #f4f4f4;
+  --text-color: #333;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+button, .btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--text-color);
+  font-size: 0.9em;
+}
+
+.social-icons img {
+  width: 32px;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.projects {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .projects {
+      grid-template-columns: 1fr;
+  }
+
+  header nav {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+
+
