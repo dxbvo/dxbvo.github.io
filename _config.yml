@@ -1,6 +1,6 @@
 title: My Portfolio
 description: Welcome to my portfolio website!
-theme: minimal-mistakes-jekyll # Replace with the theme you chose
+theme: midnight # Replace with the theme you chose
 baseurl: "" # Leave empty for GitHub Pages
 url: "https://dxbvo.github.io" # Replace with your GitHub username
 markdown: kramdown
