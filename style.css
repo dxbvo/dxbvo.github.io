@@ -32,8 +32,7 @@
 }
 
 .about_text {
-  color: red;
-  font-size: x-large;
+  font-size: 1.3rem;
 }
 
 /* about section image css */
@@ -129,7 +128,6 @@ footer {
 
 .navbar {
   background-color: black;
-  
 }
 
 /* Ensure the body and html fill the viewport height */
