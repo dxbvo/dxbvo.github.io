@@ -37,6 +37,8 @@
 
 /* about section image css */
 .imageAboutPage {
+    object-fit: contain;
+    height: auto;
     width: 100%;
     border-radius: 15px;
 }
@@ -147,7 +149,7 @@ html, body {
   flex-direction: column;
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
-  padding-top: 20px; /* Prevent overlap with the fixed navbar */
+  padding-top: calc(4rem + 20px); /* Prevent overlap with the fixed navbar */
   padding-bottom: 20px; /* Optional padding for spacing */
   background-color: whitesmoke;
 }
@@ -158,6 +160,7 @@ html, body {
 }
 
 .imageAboutPage {
+  height: auto;
   width: 100%; /* Ensure responsiveness */
   max-width: 300px; /* Restrict maximum width */
   border-radius: 10px; /* Optional rounded corners */
